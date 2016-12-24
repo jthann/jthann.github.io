@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="keywords" content="管理后台">
+    <meta name="description" content="管理后台">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link href="/static/vendor.css" rel="stylesheet">
+    <link href="/static/common-style.css" rel="stylesheet">
+    <link href="/static/user-list.css" rel="stylesheet">
+</head>
+<body>
+<div id="container">
+    <div class="shortcut">
+        <div class="right">
+            <div class="user">
+                <i class="icon-user"></i>
+                <span>hanjuntao</span>
+            </div>
+            <a href="/logout.html" class="log-out">退出</a>
+        </div>
+    </div>
+    <div class="nav">
+    <a href="javascript:;" class="logo"></a>
+    <div class="tab">
+        <ul>
+            <li class="item active">
+                <a href="user-list.html">用户管理</a>
+                <span class="bar"></span>
+            </li>
+            <li class="item">
+                <a href="task-list.html">任务管理</a>
+                <span class="bar"></span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="left-nav">
+    <div class="list">
+        <ul>
+            <li class="item active">
+                <a href="user-list.html">用户列表</a>
+            </li>
+            <li class="item">
+                <a href="user-form.html">用户编辑</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="content" class="content">
+    <div class="breadcrumb">
+        员工管理 > 员工列表
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <th>员工ID</th>
+            <th>姓名</th>
+            <th>密码</th>
+            <th>状态</th>
+            <th>创建时间</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody id="table-list">
+        <tr>
+            <td class="td1">123</td>
+            <td class="td2">张三</td>
+            <td class="td3">******</td>
+            <td class="td4">启用</td>
+            <td class="td5">2016-12-22 11:31:20</td>
+            <td class="td6">
+                <a href="javascript:;" class="btn">编辑</a>
+                <a data-id="111" href="javascript:;" class="btn delete">删除</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="pages">
+        <div id="pagination" class="pagination">
+        </div>
+        <div class="jump">
+            <div class="input-area">
+                <span>跳转到</span>
+                <input class="num-input" type="text" />
+                <span>页</span>
+            </div>
+            <a href="javascript:;" class="btn-jump">查看</a>
+        </div>
+    </div>
+</div>
+<div class="footer">&copy;copyright 2015-2016</div>
+</div>
+<script src="/static/vendor.js"></script>
+<script src="/static/common-style.js"></script>
+<script src="/static/task-list.js"></script>
+</body>
+</html>

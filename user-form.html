@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="keywords" content="管理后台">
+    <meta name="description" content="管理后台">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link href="/static/vendor.css" rel="stylesheet">
+    <link href="/static/common-style.css" rel="stylesheet">
+    <link href="/static/user-form.css" rel="stylesheet">
+</head>
+<body>
+<div id="container">
+    <div class="shortcut">
+        <div class="right">
+            <div class="user">
+                <i class="icon-user"></i>
+                <span>hanjuntao</span>
+            </div>
+            <a href="/logout.html" class="log-out">退出</a>
+        </div>
+    </div>
+    <div class="nav">
+    <a href="javascript:;" class="logo"></a>
+    <div class="tab">
+        <ul>
+            <li class="item active">
+                <a href="user-list.html">用户管理</a>
+                <span class="bar"></span>
+            </li>
+            <li class="item">
+                <a href="task-list.html">任务管理</a>
+                <span class="bar"></span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="left-nav">
+    <div class="list">
+        <ul>
+            <li class="item">
+                <a href="user-list.html">用户列表</a>
+            </li>
+            <li class="item active">
+                <a href="user-form.html">用户编辑</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="content" class="content">
+    <div class="breadcrumb">
+        用户管理 &gt; 用户编辑
+    </div>
+    <div class="btn-opts fixed single">
+        <a href="javascript:;" class="btn">保存</a>
+    </div>
+    <div class="info-input">
+        <div class="item">
+            <div class="key">员工名称：</div>
+            <div class="value">
+                <input class="ipt-area name" type="text" placeholder="请输入中文姓名">
+                <span class="error-tips">＊请输入中文姓名</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="key">员工性别：</div>
+            <div class="value">
+                <div class="select">
+                    <div class="select-val gender">男</div>
+                    <i class="icon-triangle-down"></i>
+                    <div class="select-list hide">
+                        <div class="select-item">男</div>
+                        <div class="select-item">女</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="key">员工简介：</div>
+            <div class="value high">
+                <textarea class="text-area intro" placeholder="请输入作者简介，最多200个字符"></textarea>
+                <span class="error-tips">＊请输入员工简介</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">©copyright 2015-2016</div>
+
+
+    <div class="footer">©Copyright 2015-2016</div>
+</div>
+<script src="/static/vendor.js"></script>
+<script src="/static/common-style.js"></script>
+<script src="/static/user-form.js"></script>
+
+</body>
+</html>
